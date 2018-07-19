@@ -5,7 +5,10 @@ from django.db import models
 
 # Create your models here.
 class FileModel(models.Model):
+    FirstName = models.CharField(max_length=30,default="")
+    LastName = models.CharField(max_length=30,default="")
     Email = models.EmailField()
-    File = models.FileField()
+    TumorFile = models.FileField()
+    NormalFile = models.FileField()
     def __str__(self):
-        return str(self.Email)
+        return str(self.FirstName + "'s project")

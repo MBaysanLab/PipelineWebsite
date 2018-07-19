@@ -192,6 +192,7 @@ textarea {
 
 #ImageAndButton  #btn:hover{
 	background-color: #DAA520;
+    cursor: pointer;
 }
 
 #ImageAndButton img{
