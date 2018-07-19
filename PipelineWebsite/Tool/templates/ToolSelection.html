@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% extends 'Base.html'%}
+    {% load staticfiles %}
+</head>
+<body>
+{% block Body %}
+    <div id="bodyContent">
+        <img id="dnaPic" src={% static 'gifs/dna_gif.gif'%}>
+        <div id="shader"></div>
+        <div id="twoOptions">
+            <div id="leftOpt">
+                <a>Basic</a>
+            </div>
+            <div id="splitBar"></div>
+            <div id="rightOpt">
+                <a>Custom</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

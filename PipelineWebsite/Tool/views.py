@@ -3,4 +3,8 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render
 
-# Create your views here.
+def Main(request):
+    return render(request,'HomePage.html')
+
+def ToolSelection(request):
+    return render(request,'ToolSelection.html')
