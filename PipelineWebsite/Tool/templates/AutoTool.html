@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    {% extends 'Base.html' %}
+    {% load staticfiles %}
+</head>
+{% block Body %}
+
+<div id="autoBody">
+	<div class="Step">
+		<div class="StepTitle">
+			<h1>Step 1</h1>
+		</div>
+		<div id="Step1Content">
+			<h2>Name</h2>
+			<input class="inputText" type="text">
+			<h2>Surname</h2>
+			<input class="inputText" type="text">
+			<h2>Email</h2>
+			<input class="inputText" id="emailInput" type="email">
+			<button class = "ContButtong" style="border-style:none;" >Continue</button>
+		</div>
+	</div>
+	<div class="Step" id="Step2">
+		<div class="StepTitle">
+			<h1>Step 2</h1>
+		</div>
+		<div id="Step2Content">
+			<div id="inputs">
+			<div class="inputBox">
+				<input type = "file" name="tumorFile" class="inputFile"/>
+			</div>
+			<div class="inputBox">
+				<input type = "file" name="normalFile" class="inputFile"/>
+			</div>
+			<div class="inputBox">
+				<input type = "file" name="PONFile" class="inputFile"/>
+			</div>
+			</div>
+			<button class = "ContButtong" style="border-style:none;" >Continue</button>
+		</div>
+	</div>
+	<div class="Step">
+		<div class="StepTitle">
+			<h1>Step 3</h1>
+		</div>
+		<div id="Step3Content">
+			<h2>Now we wait</h2>
+			<img src="img/hourglass.png">
+			<p>You will receive an email with the results as soon as we finish processing the files you have sent, thank you for your patience.</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+{% endblock %}
+
+</html>
