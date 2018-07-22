@@ -288,7 +288,109 @@ img{
 	font-size: 10vw;
 }
 
+/*This is for the automatic tool page*/
 
+#autoBody{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.Step{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top: 5%;
+}
+
+.StepTitle{
+	background: #3083ad;
+	color: #fff;
+	padding-left: 1%;
+}
+
+.StepTitle h1{
+	font-size: 2vw;
+	margin-bottom: 0px;
+}
+
+#Step1Content{
+
+	text-align: center;
+	background: #EAF4F8;
+}
+
+
+#Step1Content h2{
+	text-align: left;
+	padding-left: 5%;
+	margin-top: 0px;
+	padding-top: 2%;
+}
+
+#Step2Content {
+	text-align: center;
+	background: #EAF4F8
+}
+
+.inputText{
+	font-size: 2vw;
+	width: 90%;
+
+}
+#emailInput{
+	margin-bottom: 3%;
+}
+
+#inputs{
+	width: 100%;
+	height: 15vh;
+}
+
+.ContButtong{
+	background: #3083ad;
+	font-size: 2vw;
+	margin-bottom: 2%;
+	text-align: left;
+	color: #fff;
+	display: inline-block;
+}
+
+.inputBox{
+	margin-top: 2%;
+	float: left;
+
+}
+.inputFile{
+	margin: 0px 30%;
+}
+
+.ContButtong:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Step3Content{
+	text-align: center;
+	background: #EAF4F8
+}
+
+#Step3Content h2{
+	margin-top: 2%;
+	color: #3083ad;
+	font-size: 6vw;
+	margin-bottom: 2%;
+	margin-top: 0px;
+	padding-top: 2%;
+}
+
+#Step3Content p{
+	font-size: 2vw;
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 3%;
+}
+
+#Step3Content img{
+	width: 10vw;
+	margin-bottom: 2%;
+}
 
 /* ======
 ====================================================================

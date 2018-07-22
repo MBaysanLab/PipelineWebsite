@@ -6,7 +6,8 @@
     {% load staticfiles %}
 </head>
 {% block Body %}
-
+    <form action = "{% url 'upload' %}"method="post" enctype="multipart/form-data">
+{% csrf_token %}
 <div id="autoBody">
 	<div class="Step">
 		<div class="StepTitle">
@@ -14,12 +15,12 @@
 		</div>
 		<div id="Step1Content">
 			<h2>Name</h2>
-			<input class="inputText" type="text">
+			<input class="inputText" type="text" name="FirstName">
 			<h2>Surname</h2>
-			<input class="inputText" type="text">
+			<input class="inputText" type="text" name="LastName">
 			<h2>Email</h2>
-			<input class="inputText" id="emailInput" type="email">
-			<button class = "ContButtong" style="border-style:none;" >Continue</button>
+			<input class="inputText" id="emailInput" type="email" name="Email">
+			<button type="button" class = "ContButtong" style="border-style:none;" onclick="document.getElementById('Step2').scrollIntoView();">Continue</button>
 		</div>
 	</div>
 	<div class="Step" id="Step2">
@@ -29,16 +30,19 @@
 		<div id="Step2Content">
 			<div id="inputs">
 			<div class="inputBox">
-				<input type = "file" name="tumorFile" class="inputFile"/>
+                <p>Tumor Files</p>
+				<input type = "file" class="inputFile" multiple name="TumorFile"/>
 			</div>
 			<div class="inputBox">
-				<input type = "file" name="normalFile" class="inputFile"/>
+                <p>Normal Files</p>
+				<input type = "file" class="inputFile" multiple name="NormalFile"/>
 			</div>
 			<div class="inputBox">
-				<input type = "file" name="PONFile" class="inputFile"/>
+                <p>Panel OF Normals</p>
+				<input type = "file" name="PanelOfNormals" multiple class="inputFile"/>
 			</div>
 			</div>
-			<button class = "ContButtong" style="border-style:none;" >Continue</button>
+			<button type="button" class = "ContButtong" style="border-style:none;" onclick="document.getElementById('Step3').scrollIntoView();">Continue</button>
 		</div>
 	</div>
 	<div class="Step">
@@ -47,28 +51,15 @@
 		</div>
 		<div id="Step3Content">
 			<h2>Now we wait</h2>
-			<img src="img/hourglass.png">
+			<img src="{% static 'img/hourglass.png'%}">
 			<p>You will receive an email with the results as soon as we finish processing the files you have sent, thank you for your patience.</p>
 		</div>
+        <button type="submit">Finish</button>
 	</div>
 </div>
+    </form>
 
 
-
-
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 {% endblock %}
 
 </html>

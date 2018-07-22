@@ -10,5 +10,6 @@ class FileModel(models.Model):
     Email = models.EmailField()
     TumorFile = models.FileField()
     NormalFile = models.FileField()
+    PanelOfNormals = models.FileField()
     def __str__(self):
         return str(self.FirstName + "'s project")
