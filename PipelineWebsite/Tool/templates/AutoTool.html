@@ -8,6 +8,15 @@
 {% block Body %}
     <form action = "{% url 'upload' %}"method="post" enctype="multipart/form-data">
 {% csrf_token %}
+
+        <div class="container">
+            <ul class="progressbar">
+                <li class="active"></li>
+                <li class="active"></li>
+                <li class="inactive"></li>
+            </ul>
+        </div>
+
 <div id="autoBody">
 	<div class="Step">
 		<div class="StepTitle">
