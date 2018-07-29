@@ -388,6 +388,7 @@ img{
 
 .Step{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #EAF4F8;
 	/*margin-top: 5%;*/
 }
 
@@ -402,28 +403,94 @@ img{
 	margin-bottom: 0px;
 }
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+
+}
+
+.option-input:hover {
+    background: #9faab7;
+}
+
+.option-input:checked {
+    background: #3083ad;
+}
+
+.option-input:checked::before {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 2.5vw;
+    text-align: center;
+    line-height: 40px;
+}
+
+.option-input.radio {
+    border-radius: 25%;
+
+}
+
+.Radioboxes {
+    height: auto;
+    display: inline-block;
+    position: relative;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    text-align: center;
+}
+
 #Step1Content{
 
 	text-align: center;
 	background: #EAF4F8;
-}
 
+}
 
 #Step1Content h2{
 	text-align: left;
 	padding-left: 5%;
 	margin-top: 0px;
+    margin-bottom: 0px;
 	padding-top: 2%;
 }
 
 #Step2Content {
 	text-align: center;
-	background: #EAF4F8
+	background: #EAF4F8;
 }
 
 .inputText{
-	font-size: 2vw;
+	font-size: 1.5vw;
+    color: #3083ad;
 	width: 90%;
+    background: none;
+    border: none;
+    border-bottom: groove;
+    border-bottom-color: gray;
+
 
 }
 #emailInput{
