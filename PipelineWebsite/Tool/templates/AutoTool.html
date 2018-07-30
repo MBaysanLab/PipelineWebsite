@@ -11,9 +11,10 @@
 
         <div class="container">
             <ul class="progressbar">
-                <li class="active"></li>
-                <li class="active"></li>
-                <li class="inactive"></li>
+                <li class="inactive" id="PB_1"></li>
+                <li class="inactive" id="PB_2"></li>
+                <li class="inactive" id="PB_3"></li>
+                <li class="hidden" id="PB_4"></li>
             </ul>
         </div>
 
@@ -24,35 +25,28 @@
 		</div>
 
 
-        <div class="Radioboxes">
-            <label>
-                <input type="radio" class="option-input radio" name="example" checked/>
-                Automatic
-            </label>
-            <label>
-                <input type="radio" class="option-input radio" name="example"/>
-                Custom
-            </label>
-        </div>
+
 		<div id="Step1Content">
 			<h2>Name</h2>
-			<input class="inputText" type="text" name="FirstName">
+			<input class="inputText" type="text" name="FirstName" required="required">
 			<h2>Surname</h2>
-			<input class="inputText" type="text" name="LastName">
+			<input class="inputText" type="text" name="LastName" required="required">
 			<h2>Email</h2>
-			<input class="inputText" id="emailInput" type="email" name="Email">
-			<button type="button" class = "ContButtong" style="border-style:none;" onclick="document.getElementById('Step2').scrollIntoView();">Continue</button>
+			<input class="inputText" id="emailInput" type="email" name="Email" required="required">
+			<button type="button" class = "ContButtong" style="border-style:none;" onclick="ContinueStep1()">Continue</button>
 		</div>
 	</div>
 	<div class="Step" id="Step2">
 		<div class="StepTitle">
 			<h1>Step 2</h1>
 		</div>
+
 		<div id="Step2Content">
+
 			<div id="inputs">
 			<div class="inputBox">
                 <p>Tumor Files</p>
-				<input type = "file" class="inputFile" multiple name="TumorFile"/>
+				<input type = "file" class="inputFile" multiple name="TumorFile" required="required"/>
 			</div>
 			<div class="inputBox">
                 <p>Normal Files</p>
@@ -63,16 +57,41 @@
 				<input type = "file" name="PanelOfNormals" multiple class="inputFile"/>
 			</div>
 			</div>
-			<button type="button" class = "ContButtong" style="border-style:none;" onclick="document.getElementById('Step3').scrollIntoView();">Continue</button>
+			<button type="button" class = "ContButtong" style="border-style:none;" onclick="ContinueStep2()">Continue</button>
 		</div>
 	</div>
+    <div class="Step" id="Step3">
+        <div class="StepTitle">
+            <h1>Step 3</h1>
+        </div>
+        <div class="Radioboxes">
+            <label>
+                <input type="radio" class="option-input radio" name="example" onclick="RemoveCustom()"/>
+                Automatic
+            </label>
+            <label>
+                <input type="radio" class="option-input radio" name="example" onclick="CreateCustom()"/>
+                Custom
+            </label>
+        </div>
+    </div>
+    <div class="Step" id="CustomStep">
+        <div class="StepTitle">
+            <h1>Step 4</h1>
+        </div>
+        <div id="Step3Content">
+            <h2>Choose your options</h2>
+            <p>Please select the custom options you want.</p>
+        </div>
+    </div>
+
 	<div class="Step">
-		<div class="StepTitle">
-			<h1>Step 3</h1>
+		<div class="StepTitle" id ="ChangableTitle">
+			<h1>Finished!</h1>
 		</div>
 		<div id="Step3Content">
 			<h2>Now we wait</h2>
-			<img src="{% static 'img/hourglass.png'%}">
+			<img src="{% static 'img/hourglass.gif'%}">
 			<p>You will receive an email with the results as soon as we finish processing the files you have sent, thank you for your patience.</p>
 		</div>
         <button type="submit">Finish</button>

@@ -317,14 +317,11 @@ img{
 }
 
 .progressbar li {
-
-
-    height: 50%;
     list-style-type: none;
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    color: #7d7d7d;
+    color: red;
 }
 
 .progressbar li:before {
@@ -334,26 +331,26 @@ img{
     content: counter(step);
     counter-increment: step;
 
-    border: .5vw solid #7d7d7d;
+    border: .5vw solid red;
     display: block;
     text-align: center;
     font-weight: bold;
     font-size: 2vw;
-    margin: 0 auto 10vw auto;
+    margin: 0 auto 5vw auto;
     border-radius: 50%;
     background-color: white;
 }
 
 .progressbar li:after {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 280%;
+    height: 195%;
     width: 10%;
     content: '';
     position: absolute;
     text-align: center;
-    top: -270%;
+    top: -185%;
     z-index: -1;
-    background-color: black;
+    background-color: red;
 
 }
 
@@ -364,19 +361,19 @@ img{
 
 .progressbar li.active {
 
-    color: #3083ad;
+    color: green;
 
 
 
 }
 
 .progressbar li.active:before {
-    border-color: #3083ad;
+    border-color: green;
 }
 
 
 .progressbar li.active + li:after {
-    background-color: #3083ad;
+    background-color: green;
 }
 /*End Progress bar*/
 
@@ -390,6 +387,18 @@ img{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #EAF4F8;
 	/*margin-top: 5%;*/
+}
+
+#ChangableTitle{
+    background: #3083ad;
+    color: #fff;
+    padding-left: 1%;
+}
+
+#ChangableTitle h1{
+
+    font-size: 2vw;
+    margin-bottom: 0px;
 }
 
 .StepTitle{
@@ -460,6 +469,7 @@ img{
     transform: translate(-50%, 0%);
     left: 50%;
     text-align: center;
+    margin-bottom:2%;
 }
 
 #Step1Content{
@@ -476,6 +486,8 @@ img{
     margin-bottom: 0px;
 	padding-top: 2%;
 }
+
+
 
 #Step2Content {
 	text-align: center;
@@ -527,6 +539,12 @@ img{
 #Step3Content{
 	text-align: center;
 	background: #EAF4F8
+}
+
+#CustomStep {
+    background: #EAF4F8;
+
+    display: none;
 }
 
 #Step3Content h2{
