@@ -19,13 +19,16 @@
         </div>
 
 <div id="autoBody">
+
+
+    <ul class="Steplist">
+
+
+        <li>
 	<div class="Step">
 		<div class="StepTitle">
 			<h1>Step 1</h1>
 		</div>
-
-
-
 		<div id="Step1Content">
 			<h2>Name</h2>
 			<input class="inputText" type="text" name="FirstName" required="required">
@@ -36,6 +39,9 @@
 			<button type="button" class = "ContButtong" style="border-style:none;" onclick="ContinueStep1()">Continue</button>
 		</div>
 	</div>
+        </li>
+
+        <li>
 	<div class="Step" id="Step2">
 		<div class="StepTitle">
 			<h1>Step 2</h1>
@@ -60,6 +66,10 @@
 			<button type="button" class = "ContButtong" style="border-style:none;" onclick="ContinueStep2()">Continue</button>
 		</div>
 	</div>
+
+
+        </li>
+        <li>
     <div class="Step" id="Step3">
         <div class="StepTitle">
             <h1>Step 3</h1>
@@ -75,6 +85,8 @@
             </label>
         </div>
     </div>
+        </li>
+        <li>
     <div class="Step" id="CustomStep">
         <div class="StepTitle">
             <h1>Step 4</h1>
@@ -83,8 +95,11 @@
             <h2>Choose your options</h2>
             <p>Please select the custom options you want.</p>
         </div>
-    </div>
+        <img src="{% static 'img/pipeline.jpg' %}" id="CustomIMG">
 
+    </div>
+        </li>
+        <li>
 	<div class="Step">
 		<div class="StepTitle" id ="ChangableTitle">
 			<h1>Finished!</h1>
@@ -96,6 +111,8 @@
 		</div>
         <button type="submit">Finish</button>
 	</div>
+        </li>
+    </ul>
 </div>
     </form>
 

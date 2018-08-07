@@ -97,195 +97,195 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#navigationBar{
-	background: #3083ad;
-	overflow: hidden;
-	
-}
- 
-#navigationBar button{
-    float: left;
-    padding: 14px 16px;
-	font-size: 18px;
-	color: #fff;
-	background: none;
-    border:none;
+#navigationBar {
+    background: #3083ad;
+    overflow: hidden;
+
 }
 
-#navigationBar button:hover{
-	text-decoration: underline;
+#navigationBar button {
+    float: left;
+    padding: 14px 16px;
+    font-size: 18px;
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+#navigationBar button:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
 
-#Contactbar{
-	background: #3083ad;
-	overflow: hidden;
-}
- 
-#Contactbar p{
-    float: left;
-	margin: 6px 0px;
-	padding: 0px 15px;
-	font-size: 18px;
-	color: #fff;
+#Contactbar {
+    background: #3083ad;
+    overflow: hidden;
 }
 
-#image img{
-	display: block;
+#Contactbar p {
+    float: left;
+    margin: 6px 0px;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#image img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-#subBody{
-	padding: 3% 3%;
-	width: 75%;
-	margin: 0 auto;
+#subBody {
+    padding: 3% 3%;
+    width: 75%;
+    margin: 0 auto;
 }
 
-#ImageAndButton{
-	position: relative;
-	
+#ImageAndButton {
+    position: relative;
+
 }
 
-#ImageAndButton #BlackBox{
-	width: 40%;
-	height: 90%;
-	position: absolute;
-	top: 50%;
-	opacity: 0.9;
-	background: #363333;
-  	left: 75%;
-	border-radius: 2%;
-  	transform: translate(-50%, -50%);
-  	-ms-transform: translate(-50%, -50%);
+#ImageAndButton #BlackBox {
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    opacity: 0.9;
+    background: #363333;
+    left: 75%;
+    border-radius: 2%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
-#ImageAndButton #btn{
-	position: absolute;
-	background: #FFD700;
-	top: 82%;
-	left: 74%;
-	font-size: 2vw;
-	border-radius: 0.7vw;
-	padding: 0px 1%;
-	
+#ImageAndButton #btn {
+    position: absolute;
+    background: #FFD700;
+    top: 82%;
+    left: 74%;
+    font-size: 2vw;
+    border-radius: 0.7vw;
+    padding: 0px 1%;
+
 }
 
 #toolinfo {
-	position: absolute;
-	top: 25%;
-	left: 57%;
-	max-width: 35%;
-	font-size: 1.5vw;
-	color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 57%;
+    max-width: 35%;
+    font-size: 1.5vw;
+    color: #fff;
 }
 
 #tooltitle {
-	position: absolute;
-	top: 1%;
-	left: 57%;
-	max-width: 35%;
-	font-size: 3vw;
-	color: #fff;
+    position: absolute;
+    top: 1%;
+    left: 57%;
+    max-width: 35%;
+    font-size: 3vw;
+    color: #fff;
 }
 
-#ImageAndButton  #btn:hover{
-	background-color: #DAA520;
+#ImageAndButton #btn:hover {
+    background-color: #DAA520;
     cursor: pointer;
 }
 
-#ImageAndButton img{
-	width: 100%;
-	height: auto;
-	border-radius: 2vw;
+#ImageAndButton img {
+    width: 100%;
+    height: auto;
+    border-radius: 2vw;
 }
 
-#mainArticle h2{
-	color: #3083ad;
+#mainArticle h2 {
+    color: #3083ad;
 }
 
+.autoplay {
+    background: #293241;
+    margin: 0 auto;
+    width: 500px;;
 
-.autoplay{
-	background: #293241;
-	margin: 0 auto;
-	width: 500px;;
-	
 }
 
-img{
-	width:50%;
-	height: auto;
-	margin: 0 auto;
+img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
 }
-
 
 /* This is for the options Page*/
 
-
-#dnaPic{
-	width: 100%;
-	height: auto;
+#dnaPic {
+    width: 100%;
+    height: auto;
 }
 
-#bodyContent{
-	position: relative;
+#bodyContent {
+    position: relative;
 }
 
-#shader{
-	opacity: 0.5;
-	position: absolute;
-	background: #1B222A;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	
+#shader {
+    opacity: 0.5;
+    position: absolute;
+    background: #1B222A;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
 }
 
-#twoOptions{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-}
-#leftOpt{
-	text-align: center;
-	float: left;
-	width: 49%;
-	height: 100%;
-}
-#leftOpt a{
-	position: relative;
-	color: #fff;
-	top: calc(50% - 10vw);
-	font-size: 10vw;
-	
+#twoOptions {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
-#leftOpt a:hover{
-	background-color: white;
-	opacity: 0.4;
+#leftOpt {
+    text-align: center;
+    float: left;
+    width: 49%;
+    height: 100%;
 }
 
-#splitBar{
+#leftOpt a {
+    position: relative;
+    color: #fff;
+    top: calc(50% - 10vw);
+    font-size: 10vw;
+
+}
+
+#leftOpt a:hover {
+    background-color: white;
+    opacity: 0.4;
+}
+
+#splitBar {
     height: 90%;
-	width: 0.3%;
-	float: left;
-	background: #fff;
-	margin-top: 3%;
+    width: 0.3%;
+    float: left;
+    background: #fff;
+    margin-top: 3%;
 }
 
-#rightOpt{
-	text-align: center;
-	float: left;
-	width: 49%;
-	height: 100%;
+#rightOpt {
+    text-align: center;
+    float: left;
+    width: 49%;
+    height: 100%;
 }
-#rightOpt a{
-	position: relative;
-	color: #fff;
-	top: calc(50% - 10vw);
-	font-size: 10vw;
+
+#rightOpt a {
+    position: relative;
+    color: #fff;
+    top: calc(50% - 10vw);
+    font-size: 10vw;
 }
 
 /*This is for the automatic tool page*/
@@ -293,35 +293,30 @@ img{
 /*Open Progress bar*/
 .container {
     position: -webkit-sticky; /* Safari */
-    position: sticky;
+    margin-top: 1%;
     top: 2%;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
+    margin-left: 0;
 
-}
-
-.container {
-
-
-    margin: 0px;
-
-    float: left;
 }
 
 .progressbar {
-
+    margin: 0;
     padding: 0;
-    margin: 10px 20px 0px 12vh;
     counter-reset: step;
 }
 
 .progressbar li {
     list-style-type: none;
+    width: 25%;
     position: relative;
     text-align: center;
     text-transform: uppercase;
     color: red;
+    float: left;
+    margin: 0;
 }
 
 .progressbar li:before {
@@ -330,25 +325,25 @@ img{
     height: 3vw;
     content: counter(step);
     counter-increment: step;
-
-    border: .5vw solid red;
+    border: .4vw solid red;
     display: block;
     text-align: center;
     font-weight: bold;
     font-size: 2vw;
-    margin: 0 auto 5vw auto;
+    margin: 0 auto 1vw auto;
     border-radius: 50%;
     background-color: white;
 }
 
 .progressbar li:after {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 195%;
-    width: 10%;
+    height: .5vw;
+    width: 100%;
     content: '';
     position: absolute;
     text-align: center;
-    top: -185%;
+    top: 1.5vw;
+    left: -50%;
     z-index: -1;
     background-color: red;
 
@@ -363,59 +358,72 @@ img{
 
     color: green;
 
-
-
 }
 
 .progressbar li.active:before {
     border-color: green;
 }
 
-
 .progressbar li.active + li:after {
     background-color: green;
 }
+
 /*End Progress bar*/
 
+#autoBody {
 
-#autoBody{
-	width: 75%;
-	margin: 0 auto;
-}
-
-.Step{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    margin: 0 auto;
     background-color: #EAF4F8;
-	/*margin-top: 5%;*/
+
 }
 
-#ChangableTitle{
+.Steplist {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 3vw;
+}
+
+.Step {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #EAF4F8;
+    float: left;
+
+    margin-right: 1vw;
+    width: 20%;
+
+    /*margin-top: 5%;*/
+}
+
+#ChangableTitle {
     background: #3083ad;
     color: #fff;
     padding-left: 1%;
 }
 
-#ChangableTitle h1{
+#ChangableTitle h1 {
 
     font-size: 2vw;
     margin-bottom: 0px;
 }
 
-.StepTitle{
-	background: #3083ad;
-	color: #fff;
-	padding-left: 1%;
+.StepTitle {
+    background: #3083ad;
+    color: #fff;
+    padding-left: 1%;
+
 }
 
-.StepTitle h1{
-	font-size: 2vw;
-	margin-bottom: 0px;
+.StepTitle h1 {
+    font-size: 2vw;
+    margin-bottom: 0;
+    margin-top: 0;
+
 }
 
 * {
     font-family: 'Roboto', sans-serif;
 }
-
 
 .option-input {
     -webkit-appearance: none;
@@ -469,76 +477,86 @@ img{
     transform: translate(-50%, 0%);
     left: 50%;
     text-align: center;
-    margin-bottom:2%;
+    margin-bottom: 2%;
 }
 
-#Step1Content{
-
-	text-align: center;
-	background: #EAF4F8;
+#Step1Content {
+    text-align: center;
+    background: #EAF4F8;
 
 }
 
-#Step1Content h2{
-	text-align: left;
-	padding-left: 5%;
-	margin-top: 0px;
+#Step1Content h2 {
+    text-align: left;
+    padding-left: 5%;
+    margin-top: 0px;
     margin-bottom: 0px;
-	padding-top: 2%;
+    padding-top: 2%;
 }
 
+#CustomIMG {
+    width: 70%;
+    height: auto;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, -0%);
+    margin-bottom: 4%;
 
+}
 
 #Step2Content {
-	text-align: center;
-	background: #EAF4F8;
+
+    text-align: center;
+    background: #EAF4F8;
+
 }
 
-.inputText{
-	font-size: 1.5vw;
+.inputText {
+    font-size: 1.5vw;
     color: #3083ad;
-	width: 90%;
+    width: 90%;
     background: none;
     border: none;
     border-bottom: groove;
     border-bottom-color: gray;
 
-
-}
-#emailInput{
-	margin-bottom: 3%;
 }
 
-#inputs{
-	width: 100%;
-	height: 15vh;
+#emailInput {
+    margin-bottom: 3%;
 }
 
-.ContButtong{
-	background: #3083ad;
-	font-size: 2vw;
-	margin-bottom: 2%;
-	text-align: left;
-	color: #fff;
-	display: inline-block;
+#inputs {
+    width: 100%;
+    height: 15vh;
 }
 
-.inputBox{
-	margin-top: 2%;
-	float: left;
-
-}
-.inputFile{
-	margin: 0px 30%;
-}
-
-.ContButtong:hover{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.ContButtong {
+    background: #3083ad;
+    font-size: 2vw;
+    margin-bottom: 2%;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
 }
 
-#Step3Content{
-	text-align: center;
-	background: #EAF4F8
+.inputBox {
+    margin-top: 2%;
+    float: left;
+
+}
+
+.inputFile {
+    margin: 0px 30%;
+}
+
+.ContButtong:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Step3Content {
+    text-align: center;
+    background: #EAF4F8
 }
 
 #CustomStep {
@@ -547,25 +565,24 @@ img{
     display: none;
 }
 
-#Step3Content h2{
-	margin-top: 2%;
-	color: #3083ad;
-	font-size: 6vw;
-	margin-bottom: 2%;
-	margin-top: 0px;
-	padding-top: 2%;
+#Step3Content h2 {
+    margin-top: 2%;
+    color: #3083ad;
+    font-size: 2vw;
+    margin-bottom: 0%;
+    padding-top: 2%;
 }
 
-#Step3Content p{
-	font-size: 2vw;
-	width: 95%;
-	margin: 0 auto;
-	padding-bottom: 3%;
+#Step3Content p {
+    font-size: 2vw;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 3%;
 }
 
-#Step3Content img{
-	width: 10vw;
-	margin-bottom: 2%;
+#Step3Content img {
+    width: 10vw;
+    margin-bottom: 2%;
 }
 
 /* ======
@@ -660,9 +677,9 @@ img{
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -700,7 +717,6 @@ img{
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
@@ -709,6 +725,7 @@ img{
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
@@ -719,7 +736,6 @@ img{
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
