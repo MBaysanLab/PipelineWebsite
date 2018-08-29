@@ -119,6 +119,10 @@ textarea {
 
 #Contactbar {
     background: #3083ad;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
     overflow: hidden;
 }
 
@@ -309,8 +313,9 @@ img {
 }
 
 .progressbar li {
+    transition-duration: 2s;
     list-style-type: none;
-    width: 25%;
+    width: 33%;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -371,28 +376,40 @@ img {
 /*End Progress bar*/
 
 #autoBody {
-
-    width: 90%;
+    display: table; /* Allow the centering to work */
     margin: 0 auto;
+    width: 90%;
     background-color: #EAF4F8;
 
 }
 
 .Steplist {
-    display: inline-block;
-    list-style-type: none;
     margin-top: 3vw;
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+    margin-bottom: 30%;
+}
+.Steplist li{
+
+    display: inline;
 }
 
 .Step {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #EAF4F8;
     float: left;
+    transition-duration: 1s;
+    margin-right: 2.3vw;
 
-    margin-right: 1vw;
-    width: 20%;
-
+    width: 30%;
+    overflow: hidden;
     /*margin-top: 5%;*/
+}
+
+.CustomOptionsList div{
+    display: block;
+    padding: 12px;
 }
 
 #ChangableTitle {
@@ -505,10 +522,9 @@ img {
 }
 
 #Step2Content {
-
-    text-align: center;
     background: #EAF4F8;
-
+    margin-left: 20%;
+    transition-duration: 1s;
 }
 
 .inputText {
@@ -529,6 +545,8 @@ img {
 #inputs {
     width: 100%;
     height: 15vh;
+    margin-left: 0;
+
 }
 
 .ContButtong {
@@ -537,6 +555,7 @@ img {
     margin-bottom: 2%;
     text-align: left;
     color: #fff;
+
     display: inline-block;
 }
 
@@ -547,7 +566,7 @@ img {
 }
 
 .inputFile {
-    margin: 0px 30%;
+    margin: 0px 0px;
 }
 
 .ContButtong:hover {

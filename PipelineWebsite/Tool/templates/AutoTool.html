@@ -27,7 +27,7 @@
         <li>
 	<div class="Step">
 		<div class="StepTitle">
-			<h1>Step 1</h1>
+			<h1 id="testing">Step 1</h1>
 		</div>
 		<div id="Step1Content">
 			<h2>Name</h2>
@@ -50,20 +50,20 @@
 		<div id="Step2Content">
 
 			<div id="inputs">
-			<div class="inputBox">
-                <p>Tumor Files</p>
-				<input type = "file" class="inputFile" multiple name="TumorFile" required="required"/>
+                <div class="inputBox">
+                    <p>Tumor Files</p>
+                    <input type = "file" class="inputFile" multiple name="TumorFile" required="required"/>
+                </div>
+                <div class="inputBox">
+                    <p>Normal Files</p>
+                    <input type = "file" class="inputFile" multiple name="NormalFile"/>
+                </div>
+                <div class="inputBox">
+                    <p>Panel OF Normals</p>
+                    <input type = "file" name="PanelOfNormals" multiple class="inputFile"/>
+                </div>
 			</div>
-			<div class="inputBox">
-                <p>Normal Files</p>
-				<input type = "file" class="inputFile" multiple name="NormalFile"/>
-			</div>
-			<div class="inputBox">
-                <p>Panel OF Normals</p>
-				<input type = "file" name="PanelOfNormals" multiple class="inputFile"/>
-			</div>
-			</div>
-			<button type="button" class = "ContButtong" style="border-style:none;" onclick="ContinueStep2()">Continue</button>
+			<button type="button" class = "ContButtong" style="border-style:none; margin-top: 25px"  onclick="ContinueStep2()">Continue</button>
 		</div>
 	</div>
 
@@ -74,9 +74,9 @@
         <div class="StepTitle">
             <h1>Step 3</h1>
         </div>
-        <div class="Radioboxes">
+        <div class="Radioboxes" style="padding-bottom: 20px; padding-top: 10px">
             <label>
-                <input type="radio" class="option-input radio" name="example" onclick="RemoveCustom()"/>
+                <input type="radio" class="option-input radio" name="example" onclick="RemoveCustom()" checked="checked"/>
                 Automatic
             </label>
             <label>
@@ -91,27 +91,30 @@
         <div class="StepTitle">
             <h1>Step 4</h1>
         </div>
-        <div id="Step3Content">
-            <h2>Choose your options</h2>
-            <p>Please select the custom options you want.</p>
+        <div id="Step3Content" class="CustomOptionsList">
+            <div>Mapping
+                <select>
+                    <option>BWA</option>
+                    <option>BowTie2</option>
+                </select>
+            </div>
+            <div>Pre-Processing
+                <select>
+                    <option>SAMTools</option>
+                    <option>Picard</option>
+                </select>
+            </div>
+            <div>Variant Calling
+                <select>
+                    <option>Mutcet2</option>
+                    <option>Varscan</option>
+                </select>
+            </div>
         </div>
-        <img src="{% static 'img/pipeline.jpg' %}" id="CustomIMG">
 
     </div>
         </li>
-        <li>
-	<div class="Step">
-		<div class="StepTitle" id ="ChangableTitle">
-			<h1>Finished!</h1>
-		</div>
-		<div id="Step3Content">
-			<h2>Now we wait</h2>
-			<img src="{% static 'img/hourglass.gif'%}">
-			<p>You will receive an email with the results as soon as we finish processing the files you have sent, thank you for your patience.</p>
-		</div>
-        <button type="submit">Finish</button>
-	</div>
-        </li>
+
     </ul>
 </div>
     </form>
